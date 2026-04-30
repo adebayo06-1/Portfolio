@@ -1,0 +1,210 @@
+/* ======================
+   RESET
+====================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #020617;
+  color: white;
+  line-height: 1.6;
+}
+
+/* ======================
+   NAVBAR
+====================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  flex-wrap: wrap;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ======================
+   HERO
+====================== */
+
+.hero {
+  padding: 80px 10%;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile {
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* ======================
+   SECTIONS
+====================== */
+
+section {
+  padding: 60px 10%;
+}
+
+/* ======================
+   GRID
+====================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #0f172a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ======================
+   BUTTONS
+====================== */
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #3b82f6;
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+/* ======================
+   LARGE SCREENS
+====================== */
+
+@media (min-width: 1200px) {
+  .hero {
+    padding: 100px 15%;
+  }
+
+  .navbar {
+    padding: 20px 15%;
+  }
+}
+
+/* ======================
+   TABLET
+====================== */
+
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile {
+    width: 180px;
+  }
+}
+
+/* ======================
+   MOBILE
+====================== */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR FIX */
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile {
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  /* TEXT */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 40px 20px;
+  }
+
+  /* BUTTON */
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+/* ======================
+   SMALL MOBILE
+====================== */
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .profile {
+    width: 130px;
+  }
+}
